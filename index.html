@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HK Properties — Your Investment, Our Expertise</title>
+  <meta name="description" content="HK Properties — Premium residential & commercial projects in Mumbai. Global Square Residency (Andheri) and Saras Avenue (Santacruz)." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="images/logo.png" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="HK Properties logo" class="logo"/>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="actions">
+        <a class="btn btn-primary" href="projects.html">Explore Projects</a>
+        <button class="btn btn-outline" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner container">
+        <div class="hero-text">
+          <h1>HK Properties</h1>
+          <p class="tagline">Your Investment, Our Expertise</p>
+          <div class="hero-ctas">
+            <a href="projects.html" class="btn btn-primary">View Our Projects</a>
+            <a href="#contact" class="btn btn-link">Contact Us</a>
+          </div>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <img src="images/global-1.jpg" alt="Global Square Residency exterior" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section container about">
+      <div class="about-text">
+        <h2>About HK Properties</h2>
+        <p>HK Properties is a real estate company dedicated to creating high-quality residential and commercial spaces. We focus on <strong>transparency, trust, and innovation</strong> in every project we deliver. From modern apartments to premium commercial properties, HK Properties ensures a perfect blend of design, quality, and value for every client.</p>
+
+        <ul class="features">
+          <li>Trusted Developers</li>
+          <li>Premium Locations</li>
+          <li>Quality Construction</li>
+        </ul>
+      </div>
+      <div class="about-image">
+        <img src="images/saras-1.jpg" alt="Saras Avenue building" />
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="section container projects-preview">
+      <h2>Featured Projects</h2>
+      <div class="grid grid-2">
+        <article class="project-card">
+          <img src="images/global-2.jpg" alt="Global Square Residency" />
+          <div class="card-body">
+            <h3>Global Square Residency</h3>
+            <p class="muted">Andheri West — Residential & Commercial</p>
+            <p>Premium 1BHK residences & retail spaces redefining modern urban living in the heart of Mumbai.</p>
+            <div class="card-actions">
+              <a href="projects.html#global" class="btn btn-outline">View Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/saras-2.jpg" alt="Saras Avenue" />
+          <div class="card-body">
+            <h3>Saras Avenue</h3>
+            <p class="muted">Santacruz West — Residential & Commercial</p>
+            <p>A classically inspired landmark offering boutique shops & spacious 2BHK homes in a prime location.</p>
+            <div class="card-actions">
+              <a href="projects.html#saras" class="btn btn-outline">View Details</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Why choose -->
+    <section class="section container why">
+      <h2>Why Choose HK Properties?</h2>
+      <div class="grid grid-4 icons">
+        <div class="icon-box">🏗️ <span>Premium Quality</span></div>
+        <div class="icon-box">📍 <span>Prime Locations</span></div>
+        <div class="icon-box">🤝 <span>Transparent Deals</span></div>
+        <div class="icon-box">🏆 <span>Commitment</span></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container contact">
+      <div class="contact-inner">
+        <div>
+          <h2>Get in touch</h2>
+          <p>Phone: <a href="tel:+918433599535">+91 8433599535</a><br/>
+             Email: <a href="mailto:huzairkhatri12@gmail.com">huzairkhatri12@gmail.com</a></p>
+          <p>Instagram: <a href="https://instagram.com/hk_propertiesss" target="_blank">@hk_propertiesss</a></p>
+          <p><strong>Interested in a project?</strong> Click below to message us on WhatsApp.</p>
+          <a class="btn btn-primary" id="whatsappBtn" href="https://wa.me/918433599535?text=Hi%20HK%20Properties,%20I%20am%20interested%20in%20your%20projects." target="_blank">Chat on WhatsApp</a>
+        </div>
+
+        <form class="contact-form" onsubmit="submitContact(event)">
+          <label><input name="name" placeholder="Your name" required /></label>
+          <label><input name="phone" placeholder="Phone number" required /></label>
+          <label><input name="email" type="email" placeholder="Email (optional)" /></label>
+          <label>
+            <select name="interested">
+              <option value="">Interested in...</option>
+              <option>Global Square Residency</option>
+              <option>Saras Avenue</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label><textarea name="message" placeholder="Message"></textarea></label>
+          <label class="consent"><input type="checkbox" required /> I agree to be contacted</label>
+          <button class="btn btn-primary" type="submit">Send Enquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>©️ <span id="year"></span> HK Properties. All Rights Reserved.</div>
+      <div>Designed with ❤️</div>
+    </div>
+  </footer>
+
+  <div id="mobileNavOverlay" class="mobile-nav hidden">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects – HK Properties</title>
+  <meta name="description" content="Explore Global Square Residency and Saras Avenue — projects by HK Properties." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="images/logo.png" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="HK Properties logo" class="logo"/>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="actions">
+        <a class="btn btn-primary" href="#contact">Enquire Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1>Projects</h1>
+    <p class="lead">Your Investment, Our Expertise — explore our signature developments.</p>
+
+    <!-- Global -->
+    <section id="global" class="project-detail">
+      <div class="grid grid-2">
+        <div class="project-media">
+          <img src="images/global-1.jpg" alt="Global Square Residency exterior" />
+          <div class="thumbs">
+            <img data-full="images/global-2.jpg" src="images/global-2.jpg" alt="" />
+            <img data-full="images/global-floor-1.jpg" src="images/global-floor-1.jpg" alt="" />
+            <img data-full="images/global-floor-2.jpg" src="images/global-floor-2.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="project-info">
+          <h2>Global Square Residency</h2>
+          <p class="muted">Andheri West — Residential & Commercial</p>
+          <p>Global Square Residency, located in the heart of Andheri West, offers a blend of residential and commercial spaces designed for modern urban living. With premium 1BHK residences, retail outlets, and excellent connectivity, this project redefines luxury and convenience in Mumbai’s vibrant suburbs.</p>
+
+          <h4>Highlights</h4>
+          <ul>
+            <li>Premium 1BHK apartments & retail spaces</li>
+            <li>Modern amenities & secure environment</li>
+            <li>Excellent connectivity to metro & key hubs</li>
+          </ul>
+          <a class="btn btn-primary" href="https://wa.me/918433599535?text=Hi%20I%20am%20interested%20in%20Global%20Square%20Residency" target="_blank">Enquire on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Saras -->
+    <section id="saras" class="project-detail">
+      <div class="grid grid-2 reverse">
+        <div class="project-media">
+          <img src="images/saras-1.jpg" alt="Saras Avenue exterior" />
+          <div class="thumbs">
+            <img data-full="images/saras-2.jpg" src="images/saras-2.jpg" alt="" />
+            <img data-full="images/saras-floor-1.jpg" src="images/saras-floor-1.jpg" alt="" />
+            <img data-full="images/saras-floor-2.jpg" src="images/saras-floor-2.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="project-info">
+          <h2>Saras Avenue</h2>
+          <p class="muted">Santacruz West — Residential & Commercial</p>
+          <p>Saras Avenue is a classically inspired landmark that blends timeless elegance with modern urban living. Featuring boutique commercial shops on the lower floors and spacious 2 BHK residences above, it perfectly unites refined architecture with everyday functionality.</p>
+
+          <h4>Highlights</h4>
+          <ul>
+            <li>Boutique commercial shops with high street visibility</li>
+            <li>Spacious 2 BHK residences with premium finishes</li>
+            <li>Classic façade with intricate detailing and symmetry</li>
+          </ul>
+
+          <a class="btn btn-primary" href="https://wa.me/918433599535?text=Hi%20I%20am%20interested%20in%20Saras%20Avenue" target="_blank">Enquire on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>©️ <span id="year2"></span> HK Properties. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <!-- image modal -->
+  <div id="imgModal" class="img-modal hidden" onclick="closeModal()">
+    <img id="modalImg" src="" alt=""/>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
